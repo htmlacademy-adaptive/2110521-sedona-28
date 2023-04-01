@@ -1,10 +1,9 @@
 # Личный проект «Седона» 
 
 * Студент: [Aleksei Bissenek](https://up.htmlacademy.ru/adaptive/28/user/2110521).
-* Наставник: [Малик Киров] (https://htmlacademy.ru/profession/fullstack)
+* Наставник: [Малик Киров]
 
 ---
-first commit
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 
