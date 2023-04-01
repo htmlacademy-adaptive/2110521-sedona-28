@@ -4,6 +4,7 @@
 * Наставник: [Малик Киров] (https://htmlacademy.ru/profession/fullstack)
 
 ---
+first commit
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 
