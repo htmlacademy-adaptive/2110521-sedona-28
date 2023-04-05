@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a href="#" class="main-header__logo">
+      <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185px" height="96px">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden"></span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="intro">
+      <img class="intro__image" src="img/main-logo-welcome.svg" alt="Добро пожаловать в Седону"
+        width="282px" height="214px">
+    </div>
+    <section class="advantages">
+        <h2 class="advantages__title title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+        <p class="advantages__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      <ul class="advantages__list advantages__list--background-blue advantages__list-city">
+        <li class="advantages__item">
+          <h3 class="advantages__item-title title advantages-item__text--white"></h3>
+          <p class="advantages__item-number description advantages-item__text--white"></p>
+          <p class="advantages__item-description description advantages-item__text--white"></p>
+        </li>
+        <li class="advantages__item advantages__item-image">
+          <img src="" alt="" class="advantages__image">
+        </li>
+      </ul>
+      <ul class="advantages__list advantages__list--icons">
+        <li class="advantages__item">
+          <div class="advantages__item-icon icon-home"></div>
+          <h3 class="advantages__item-title title advantages-item__text--black"></h3>
+          <p class="advantages__item-description description advantages-item__text--black"></p>
+        </li>
+      </ul>
 
 
-  </body>
+    </section>
+  </main>
+
+</body>
+
 </html>
