@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format(woff2), url("../fonts/ptsans.woff") format(woff);
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format(woff2), url("../fonts/ptsansbold.woff") format(woff);
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .page__body {
   width: 320px;
   margin: 0 auto;
@@ -34,6 +53,9 @@
 .title--smaller {
   font-size: 14px;
   line-height: 21px;
+}
+.title--capitalize {
+  text-transform: none;
 }
 .description {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -307,12 +329,6 @@
   border-top: 1px solid #e5e5e5;
   padding: 0 20px;
 }
-.form-fieldset {
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0;
-  padding-bottom: 24px;
-}
 .review__title {
   margin: 0 20px 24px;
 }
@@ -322,14 +338,6 @@
 .review-form {
   display: flex;
   flex-direction: column;
-}
-.review-form-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 .review-form__block {
   margin: 0;
@@ -372,5 +380,22 @@
 }
 .input-text--emotions {
   min-height: 150px;
+}
+.form-fieldset {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  padding-bottom: 24px;
+}
+.review-form-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.emotions-block {
+  margin-bottom: 56px;
 }
 /*# sourceMappingURL=style.css.map */
