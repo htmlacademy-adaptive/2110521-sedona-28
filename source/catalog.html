@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Фото и видео</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,11 +13,11 @@
       <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden"></span>
+      <button class="main-nav__toggle toggle-button" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--hidden">
           <li class="site-list__item site-list__item--current">
             <a href="index.html">Главная</a>
           </li>
@@ -27,7 +28,7 @@
             <a href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a href="https://htmlacademy.ru/study">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -39,7 +40,7 @@
     </div>
     <section class="photos">
       <h1 class="photos__title title">Фото и видео</h1>
-      <p class="photos__text description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      <p class="photos__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
       <ul class="photos__list photos-list">
         <li class="photos-list__item photo-item">
@@ -101,7 +102,7 @@
       </ul>
     </section>
     <section class="video">
-      <h2 class="video-title title">Все еще сомневаетесь?</h2>
+      <h2 class="video__title title">Все еще сомневаетесь?</h2>
       <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
         в
         очередной раз!</p>
