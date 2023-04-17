@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Form Sedona</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,11 +13,11 @@
       <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden"></span>
+      <button class="main-nav__toggle toggle-button" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--hidden">
           <li class="site-list__item site-list__item--current">
             <a href="index.html">Главная</a>
           </li>
@@ -27,7 +28,7 @@
             <a href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a href="https://htmlacademy.ru/study">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -64,12 +65,12 @@
           <ul class="review-form__list review-form-list">
             <li class="review-form__list-item review-form__list-item--flex">
               <label class="review-form__label label description description--left" for="telephone">Контактный телефон*:</label>
-              <input class="review-form__input input-text" type="tel" id="telephone" name="telephone"
+              <input class="review-form__input input-text input-text--phone" type="tel" id="telephone" name="telephone"
                 placeholder="Введите телефон" required>
             </li>
             <li class="review-form__list-item review-form__list-item--flex">
               <label class="review-form__label label description description--left" for="email">Электронная почта*:</label>
-              <input class="review-form__input input-text" type="email" id="email" name="email" placeholder="Введите e-mail"
+              <input class="review-form__input input-text input-text--email" type="email" id="email" name="email" placeholder="Введите e-mail"
                 required>
             </li>
           </ul>
@@ -129,7 +130,7 @@
         <fieldset class="review-form__block form-fieldset">
           <legend class="review-form__title title">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="story">Ваши впечатления:</label>
-          <textarea id="review-form__story" name="story" rows="5" cols="33" placeholder="Опишите подробно все свои восторги">
+          <textarea class="review-form__input input-text input-text--emotions " id="review-form__story" name="story" rows="5" cols="33" placeholder="Опишите подробно все свои восторги">
           </textarea>
         </fieldset>
         <button class="review-form__button button button--form" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>

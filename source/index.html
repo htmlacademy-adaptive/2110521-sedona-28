@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,11 +13,11 @@
       <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden"></span>
+      <button class="main-nav__toggle toggle-button" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--hidden">
           <li class="site-list__item site-list__item--current">
             <a href="index.html">Главная</a>
           </li>
@@ -35,7 +36,7 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    <div class="intro">
+    <div class="intro-banner">
       <img class="intro__image" src="img/main-logo-welcome.svg" alt="Добро пожаловать в Седону" width="282"
         height="214">
     </div>
