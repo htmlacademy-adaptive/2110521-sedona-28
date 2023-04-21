@@ -1,13 +1,33 @@
 .facilities-card {
   background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .facilities-card__title {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    max-width: 190px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }
 
 .facilities-card__description {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    max-width: 190px;
+    text-align: center;
+  }
 }

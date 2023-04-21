@@ -1,9 +1,27 @@
 .site-list {
   display: flex;
   list-style: none;
-  flex-direction: column;
 
   &--hidden {
     display: none;
   }
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 27px 0 48px;
+  }
+
+  .site-list__item--right {
+    padding-left: 100px;
+  }
+}
+
+.site-list a {
+  color: #000;
+  text-decoration: none;
 }

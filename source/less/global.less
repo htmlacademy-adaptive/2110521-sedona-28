@@ -7,6 +7,25 @@
 .page__body {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+}
+
+.page {
+  height: 100%;
+  background-color: #e7e5e5;
+}
+
+.page__wrapper {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .visually-hidden {
