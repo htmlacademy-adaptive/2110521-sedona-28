@@ -1,12 +1,39 @@
 .review__form {
   border-top: 1px solid #e5e5e5;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    padding: 0 60px 50px;
+    border-top: none;
+  }
 }
 
 .review__title {
-  margin: 0 20px 24px;
+  margin: 0;
+  margin-top: 35px;
+
+  @media (min-width: @desktop) {
+    margin-top: 115px;
+  }
 }
 
 .review__description {
-  margin: 0 20px 28px;
+  margin: 24px 20px 28px;
+
+  @media (min-width: @tablet) {
+    max-width: 436px;
+    margin: 24px auto 100px;
+  }
+}
+
+.review__form--wrapper {
+  position: relative;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 58px;
+  }
 }

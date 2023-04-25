@@ -6,3 +6,45 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.radio-list--item {
+  width: 280px;
+}
+
+.checkbox-list--item {
+  width: 224px;
+
+  @media (min-width: @desktop) {
+    width: 180px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .radio-list,
+  .checkbox-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 36px;
+
+    @media (min-width: @desktop) {
+      padding: 31px 50px;
+      justify-content: space-between;
+    }
+  }
+
+  .checkbox-list {
+    padding: 0 84px;
+  }
+
+  .review-form__submit-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: @desktop) {
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
+}

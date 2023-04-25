@@ -1,5 +1,5 @@
 .title {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -18,6 +18,22 @@
 
   &--bigger {
     font-size: 21px;
+  }
+
+  &--biggest {
+    font-size: 18px;
+
+    @media (min-width: @tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &--bigger-tablet {
+    font-size: 18px;
+
+    @media (min-width: @tablet) {
+      font-size: 21px;
+    }
   }
 
   &--smaller {
