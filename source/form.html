@@ -14,19 +14,19 @@
       <a href="#" class="main-header__logo">
         <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle toggle-button" type="button">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle toggle-button toggle-button--burger" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link title title--smaller" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link title title--smaller" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item site-list__item--right">
+            <li class="site-list__item">
               <a class="site-list__link title title--smaller" href="form.html">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
@@ -70,73 +70,82 @@
                 <legend class="review-form__title title title--bigger-tablet">Контактная информация:</legend>
                 <ul class="review-form__list review-form-list">
                   <li class="review-form__list-item review-form__list-item--flex">
-                    <label class="review-form__label label description description--left" for="telephone">Контактный
+                    <label class="review-form__label label description description--left label-phone" for="telephone">Контактный
                       телефон*:</label>
                     <input class="review-form__input input-text input-text--phone" type="tel" id="telephone"
                       name="telephone" placeholder="Введите телефон" required>
+                      <span class="input-phone-icon"></span>
                   </li>
                   <li class="review-form__list-item review-form__list-item--flex">
-                    <label class="review-form__label label description description--left" for="email">Электронная
+                    <label class="review-form__label label description description--left lable-email" for="email">Электронная
                       почта*:</label>
                     <input class="review-form__input input-text input-text--email" type="email" id="email" name="email"
                       placeholder="Введите e-mail" required>
+                      <span class="input-email-icon"></span>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="review-form__block form-fieldset">
+            <fieldset class="review-form__block form-fieldset form-border-top">
               <legend class="review-form__title title title--bigger-tablet">ВАше Общее впечатление:</legend>
               <ul class="review-form__list review-form-list radio-list">
                 <li class="review-form__list-item radio-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-radio" type="radio" name="telephone" checked>
+                    <span class="custom-radio"></span>
                     <span class="review-form__label label title title--capitalize">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="review-form__list-item radio-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-radio" type="radio" name="telephone">
+                    <span class="custom-radio"></span>
                     <span class="review-form__label label title title--capitalize">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="review-form__list-item radio-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-radio" type="radio" name="telephone">
+                    <span class="custom-radio"></span>
                     <span class="review-form__label label title title--capitalize">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__block form-fieldset">
+            <fieldset class="review-form__block form-fieldset form-border-top">
               <legend class="review-form__title title title--bigger-tablet">посещенные достопримечательности:</legend>
               <ul class="review-form__list review-form-list checkbox-list">
                 <li class="review-form__list-item checkbox-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-checkbox" type="checkbox" name="devil's bridge" checked>
+                    <span class="custom-checkbox"></span>
                     <span class="review-form__label label title title--capitalize">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="review-form__list-item checkbox-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-checkbox" type="checkbox" name="mountain" checked>
+                    <span class="custom-checkbox"></span>
                     <span class="review-form__label label title title--capitalize">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="review-form__list-item checkbox-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-checkbox" type="checkbox" name="park" checked>
+                    <span class="custom-checkbox"></span>
                     <span class="review-form__label label title title--capitalize">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="review-form__list-item checkbox-list--item">
                   <label class="review-form__control">
                     <input class="review-form__input input-checkbox" type="checkbox" name="red-rocks">
+                    <span class="custom-checkbox"></span>
                     <span class="review-form__label label title title--capitalize">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__block form-fieldset emotions-block">
+            <fieldset class="review-form__block form-fieldset emotions-block emotion-block">
               <legend class="review-form__title title title--bigger-tablet">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="story">Ваши впечатления:</label>
               <textarea class="review-form__input input-text input-text--emotions " id="review-form__story" name="story"
@@ -198,6 +207,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

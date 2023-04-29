@@ -8,6 +8,10 @@
     padding: 0 60px 50px;
     border-top: none;
   }
+
+  @media (min-width: @desktop) {
+    padding: 0 120px 50px;
+  }
 }
 
 .review__title {
@@ -35,5 +39,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 58px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      background-color: #dbdbdb;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @media (min-width: @desktop) {
+    gap: 100px;
   }
 }

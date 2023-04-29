@@ -34,8 +34,7 @@
 }
 
 .advantages-card__wrapper {
-  margin: 0;
-  padding: 0;
+  padding: 37px 0;
 
   &--with-image {
     background-color: #81b3d2;
@@ -46,8 +45,26 @@
   }
 
   &--triangle {
-    padding-top: 54px;
-    padding-bottom: 40px;
+    position: relative;
+    padding-top: 60px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      height: 37px;
+      width: 100%;
+      top: 0;
+      content: "";
+      background-image: url("../img/triangle.svg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      z-index: 10;
+
+      @media (min-width: @tablet) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: @tablet) {

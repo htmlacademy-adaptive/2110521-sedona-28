@@ -1,10 +1,29 @@
 .toggle-button {
   width: 23px;
   height: 22px;
-  background-image: url("../img/icons/icon-menu.svg");
   padding: 0;
   box-sizing: border-box;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--burger {
+    background-image: url("../img/icons/icon-menu.svg");
+    background-color: transparent;
+  }
+
+  &--cross {
+    background-image: url("../img/icons/icon-cross.svg");
+    fill: #ffffff;
+    background-color: transparent;
+    z-index: 1000;
+  }
 }

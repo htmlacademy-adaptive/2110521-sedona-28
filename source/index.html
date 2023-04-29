@@ -14,19 +14,19 @@
       <a href="#" class="main-header__logo">
         <img class="main-header__logo-image" src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle toggle-button" type="button">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle toggle-button toggle-button--burger" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link title title--smaller" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link title title--smaller" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item site-list__item--right">
+            <li class="site-list__item">
               <a class="site-list__link title title--smaller" href="form.html">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
@@ -60,16 +60,19 @@
               height="260">
             <ul class="advantages-card__facilities facilities-list">
               <li class="facilities-list__item facilities-card facilities-card--home">
-                <h4 class="facilities-card__title title">Жилье</h4>
-                <p class="facilities-card__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h4 class="facilities-card__title title title--left">Жилье</h4>
+                <p class="facilities-card__description description description--left">Рекомендуем пожить в настоящем мотеле, все как в
+                  кино!</p>
               </li>
               <li class="facilities-list__item facilities-card facilities-card--food">
-                <h4 class="facilities-card__title title">ЕДА</h4>
-                <p class="facilities-card__description description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <h4 class="facilities-card__title title title--left">ЕДА</h4>
+                <p class="facilities-card__description description description--left">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                  разочаруетесь!</p>
               </li>
               <li class="facilities-list__item facilities-card facilities-card--present">
-                <h4 class="facilities-card__title title">СУВЕНИРЫ</h4>
-                <p class="facilities-card__description description">Не только китайского, но и местного производства!</p>
+                <h4 class="facilities-card__title title title--left">СУВЕНИРЫ</h4>
+                <p class="facilities-card__description description description--left">Не только китайского, но и местного производства!
+                </p>
               </li>
             </ul>
           </li>
@@ -167,7 +170,7 @@
       </div>
     </footer>
   </div>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
