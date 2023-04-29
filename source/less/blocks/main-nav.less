@@ -2,12 +2,43 @@
   width: 100%;
   display: flex;
   position: relative;
+
+  &__wrapper {
+    min-height: 56px;
+  }
+}
+
+.main-nav--closed .site-list {
+  @media (max-width: @mobile) {
+    display: none;
+  }
+}
+
+.main-nav--opened .site-list {
+  @media (max-width: @mobile) {
+    position: absolute;
+  }
 }
 
 .main-nav__toggle {
-  margin: 17px 20px 17px auto;
+  position: absolute;
+  right: 20px;
+  top: 17px;
 
   @media (min-width: 768px) {
     display: none;
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    @media (max-width: @mobile) {
+      display: flex;
+      position: static;
+    }
   }
 }

@@ -1,12 +1,67 @@
 .facilities-card {
   background-color: #ffffff;
+  position: relative;
+
+  &--home .title::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    left: 5%;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      width: 77px;
+      height: 72px;
+      left: 50%;
+      margin-left: -20px;
+      top: 70px;
+    }
+  }
+
+  &--food .title::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    left: 5%;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      width: 77px;
+      height: 72px;
+      left: 50%;
+      margin-left: -20px;
+      top: 70px;
+    }
+  }
+
+  &--present .title::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 38px;
+    left: 5%;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      width: 77px;
+      height: 72px;
+      left: 50%;
+      margin-left: -20px;
+      top: 70px;
+    }
+  }
 
   @media (min-width: @tablet) {
     width: 256px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 158px;
     padding-bottom: 60px;
   }
 
@@ -18,6 +73,7 @@
 .facilities-card__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet) {
     max-width: 190px;
