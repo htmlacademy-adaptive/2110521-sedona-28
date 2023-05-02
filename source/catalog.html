@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -48,8 +52,12 @@
         <ul class="photos__list photos-list">
           <li class="photos-list__item photo-item photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-road-phone.jpg" alt="Дорога Седона" width="280"
+              <picture>
+                <source media="(min-width: 780px)" srcset="img/photo-road-tablet.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <img class="photo-card__image photo-card__main" src="img/photo-road-phone.jpg" srcset="img/photo-road-phone@2x.jpg" alt="Дорога Седона" width="280"
                 height="280">
+              </picture>
             </a>
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
@@ -64,8 +72,12 @@
           </li>
           <li class="photos-list__item photo-item photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-flower-phone.jpg" alt="Местная растительность" width="280"
+              <picture>
+                <source media="(min-width: 780px)" srcset="img/photo-flower-tablet.jpg 1x, img/photo-flower-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-flower-desktop.jpg 1x, img/photo-flower-desktop@2x.jpg 2x">
+                <img class="photo-card__image" src="img/photo-flower-phone.jpg" srcset="img/photo-flower-phone@2x.jpg" alt="Местная растительность" width="280"
                 height="280">
+              </picture>
             </a>
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
@@ -80,8 +92,12 @@
           </li>
           <li class="photos-list__item photo-item photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-mountain-phone.jpg" alt="Дорога на север" width="280"
+              <picture>
+                <source media="(min-width: 780px)" srcset="img/photo-mountain-tablet.jpg 1x, img/photo-mountain-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-mountain-desktop.jpg 1x, img/photo-mountain-desktop@2x.jpg 2x">
+                <img class="photo-card__image" src="img/photo-mountain-phone.jpg" srcset="img/photo-mountain-phone@2x.jpg" alt="Дорога на север" width="280"
                 height="280">
+              </picture>
             </a>
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
@@ -96,8 +112,12 @@
           </li>
           <li class="photos-list__item photo-item photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-bridge-phone.jpg" alt="Мост дьявола" width="280"
+              <picture>
+                <source media="(min-width: 780px)" srcset="img/catalog-bridge-tablet.jpg 1x, img/catalog-bridge-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog-bridge-desktop.jpg 1x, img/catalog-bridge-desktop@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog-bridge.jpg" srcset="img/catalog-bridge@2x.jpg" alt="Мост дьявола" width="280"
                 height="280">
+              </picture>
             </a>
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
@@ -118,7 +138,11 @@
           в
           очередной раз!</p>
         <div class="video__block video-preview">
-          <img class="video-preview__image" src="img/video-phone.jpg" alt="Видео" width="280" height="177">
+          <picture>
+            <source media="(min-width: 780px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <img class="video-preview__image" src="img/video-phone.jpg" alt="Видео" width="280" height="177">
+          </picture>
         </div>
       </section>
     </main>

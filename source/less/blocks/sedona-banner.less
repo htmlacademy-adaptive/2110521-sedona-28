@@ -9,4 +9,17 @@
   box-sizing: border-box;
   padding-top: 90px;
   padding-bottom: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-banner@2x.jpg");
+  }
+
+  @media (min-width: @tablet) {
+    background-image: url("../img/sedona-banner-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sedona-banner-tablet@2x.jpg");
+    }
+  }
 }

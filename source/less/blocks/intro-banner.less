@@ -1,5 +1,5 @@
 .intro-banner {
-  background-image: url("../img/intro-background.jpg");
+  background-image: url("../img/intro-back-mobile.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: rgb(94, 161, 139);
@@ -10,6 +10,19 @@
   padding-top: 90px;
   padding-bottom: 60px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/into-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet) {
+    background-image: url("../img/intro-back-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-back-tablet@2x.jpg");
+    }
+  }
 
   &::after {
     content: "";
