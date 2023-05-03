@@ -9,4 +9,39 @@
   box-sizing: border-box;
   padding-top: 90px;
   padding-bottom: 60px;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-banner@2x.jpg");
+  }
+
+  @media (min-width: @tablet) {
+    background-image: url("../img/sedona-banner-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sedona-banner-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/sedona-banner-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sedona-banner-desktop@2x.jpg");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 57px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 0%);
+    background-image: url("../img/intro-triangle.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }

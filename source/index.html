@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -56,8 +60,12 @@
               <p class="advantages-card__description description description--with-image">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ
                 ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <img class="advantages-card__image" src="img/photo-city-phone.jpg" alt="город Седона" width="320"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 780px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages-card__image" src="img/photo-city-phone.jpg" srcset="img/photo-city-phone@2x.jpg 2x" alt="город Седона" width="320"
               height="260">
+            </picture>
             <ul class="advantages-card__facilities facilities-list">
               <li class="facilities-list__item facilities-card facilities-card--home">
                 <h4 class="facilities-card__title title title--left">Жилье</h4>
@@ -77,14 +85,18 @@
             </ul>
           </li>
           <li class="advantages-list__item advantages-list__item--with-image advantages-card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 780px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages-card__image" src="img/photo-bridge-phone.jpg" srcset="img/photo-bridge-phone@2x.jpg 2x" alt="город Седона" width="320"
+              height="260">
+            </picture>
             <div class="advantages-card__wrapper advantages-card__wrapper--with-image">
               <h3 class="advantages-card__title title title--with-image">ТАМ ЕСТЬ Мост дьявола</h3>
               <p class="advantages-card__number description description--with-image">— №2 —</p>
               <p class="advantages-card__description description description--with-image">Да, по нему можно пройти! Если
                 вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages-card__image" src="img/photo-bridge-phone.jpg" alt="город Седона" width="320"
-              height="260">
           </li>
           <li class="advantages-list__item advantages-card">
             <div class="advantages-card__wrapper advantages-card__wrapper--gray">
@@ -119,7 +131,11 @@
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта.</h2>
         <div class="map__element">
-          <img class="map__image" src="img/map-phone.jpg" alt="карта" width="320" height="350">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 780px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map-phone.jpg" srcset="img/map-phone@2x.jpg" alt="карта" width="320" height="350">
+          </picture>
         </div>
       </section>
     </main>

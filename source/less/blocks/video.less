@@ -29,4 +29,23 @@
 .video-preview__image {
   width: 100%;
   display: block;
+
+  @media (min-width: @tablet) {
+    height: 100%;
+  }
+}
+
+.video-preview {
+  position: relative;
+}
+
+.video-preview-play {
+  position: absolute;
+  background-image: url("../img/play-button.svg");
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
 }
