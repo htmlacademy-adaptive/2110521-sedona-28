@@ -12,17 +12,25 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/into-back-mobile@2x.jpg");
+    background-image: url("../img/intro-back-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet) {
     background-image: url("../img/intro-back-tablet.jpg");
-    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-back-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/intro-back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-back-desktop@2x.jpg");
+    }
+  }
+
 
   &::after {
     content: "";
