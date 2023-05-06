@@ -7,9 +7,23 @@
   list-style: none;
 }
 
-.social__item {
-  background-color: #81b3d2;
+/* .social__item {
   width: 48px;
   height: 48px;
   padding: 17px 12px;
+} */
+
+.social__icon {
+  display: block;
+  --social-blue: #81b3d2;
+  --social-white: rgba(255, 255, 255, 1);
+
+  &:hover {
+    --social-blue: #669ec0;
+  }
+
+  &:active {
+    --social-blue: #5496bd;
+    --social-white: rgba(255, 255, 255, 0.3);
+  }
 }
