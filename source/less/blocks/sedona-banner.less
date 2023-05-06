@@ -11,6 +11,11 @@
   padding-bottom: 60px;
   position: relative;
 
+  @media (min-width: @tablet) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/sedona-banner@2x.jpg");
   }
@@ -43,5 +48,14 @@
     background-image: url("../img/intro-triangle.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+}
+
+.sedona-banner__logo {
+  display: block;
+
+  @media (min-width: @tablet) {
+    width: 460px;
+    height: 78px;
   }
 }
