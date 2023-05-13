@@ -10,6 +10,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore'
 import del from 'del';
+import rename from 'gulp-rename';
 
 
 // Styles
