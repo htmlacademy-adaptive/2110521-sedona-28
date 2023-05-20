@@ -21,9 +21,10 @@
             class="visually-hidden">Открыть меню.</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link title title--smaller" href="index.html">Главная</a>
+            </li>
             <li class="site-list__item site-list__item--current"><a class="site-list__link title title--smaller"
-                href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link title title--smaller" href="catalog.html">Фото и
+                href="catalog.html">Фото и
                 видео</a></li>
             <li class="site-list__item"><a class="site-list__link title title--smaller" href="form.html">Форма
                 Отзыва</a></li>
@@ -43,6 +44,11 @@
         <ul class="photos__list photos-list">
           <li class="photos-list__item photo-item photo-card"><a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-road-desktop.webp, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-road-tablet.webp, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-phone.webp, img/photo-road-phone@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-road-desktop.jpg, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 780px)" srcset="img/photo-road-tablet.jpg, img/photo-road-tablet@2x.jpg 2x">
@@ -55,13 +61,21 @@
                 <h3 class="photo-card__title title title--smaller">Неродные просторы</h3>
                 <p class="photo-card__author description description-nontransform">Автор фото: Борис</p>
               </div>
-              <div class="photo-card__liked like-rating"><img class="like-rating__image" src="img/thumb-up.svg"
-                  alt="лайк" width="23" height="21"> <span class="like-rating__value title title--smaller">1350</span>
+              <div class="photo-card__liked like-rating">
+                <a class="like-rating__link" href="#">
+                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <span class="like-rating__value title title--smaller">1350</span>
+                </a>
               </div>
             </div>
           </li>
           <li class="photos-list__item photo-item photo-card"><a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-flower-desktop.webp, img/photo-flower-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-flower-tablet.webp, img/photo-flower-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-flower-phone.webp, img/photo-flower-phone@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-flower-desktop.jpg, img/photo-flower-desktop@2x.jpg 2x">
                 <source media="(min-width: 780px)"
@@ -75,13 +89,21 @@
                 <h3 class="photo-card__title title title--smaller">Местная растительность</h3>
                 <p class="photo-card__author description description-nontransform">Автор фото: Сергей</p>
               </div>
-              <div class="photo-card__liked like-rating"><img class="like-rating__image" src="img/thumb-up.svg"
-                  alt="лайк" width="23" height="21"> <span class="like-rating__value title title--smaller">143</span>
+              <div class="photo-card__liked like-rating">
+                <a class="like-rating__link" href="#">
+                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <span class="like-rating__value title title--smaller">143</span>
+                </a>
               </div>
             </div>
           </li>
           <li class="photos-list__item photo-item photo-card"><a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-mountain-desktop.webp, img/photo-mountain-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-mountain-tablet.webp, img/photo-mountain-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-mountain-phone.webp, img/photo-mountain-phone@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-mountain-desktop.jpg, img/photo-mountain-desktop@2x.jpg 2x">
                 <source media="(min-width: 780px)"
@@ -95,13 +117,21 @@
                 <h3 class="photo-card__title title title--smaller">Дорога на север</h3>
                 <p class="photo-card__author description description-nontransform">Автор фото: Петр</p>
               </div>
-              <div class="photo-card__liked like-rating"><img class="like-rating__image" src="img/thumb-up.svg"
-                  alt="лайк" width="23" height="21"> <span class="like-rating__value title title--smaller">96</span>
+              <div class="photo-card__liked like-rating">
+                <a class="like-rating__link" href="#">
+                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <span class="like-rating__value title title--smaller">96</span>
+                </a>
               </div>
             </div>
           </li>
           <li class="photos-list__item photo-item photo-card"><a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/catalog-bridge-desktop.webp, img/catalog-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-bridge-tablet.webp, img/catalog-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-bridge.webp, img/catalog-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog-bridge-desktop.jpg, img/catalog-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 780px)"
@@ -115,8 +145,11 @@
                 <h3 class="photo-card__title title title--smaller">Мост дьявола</h3>
                 <p class="photo-card__author description description-nontransform">Автор фото: Антон</p>
               </div>
-              <div class="photo-card__liked like-rating"><img class="like-rating__image" src="img/thumb-up.svg"
-                  alt="лайк" width="23" height="21"> <span class="like-rating__value title title--smaller">254</span>
+              <div class="photo-card__liked like-rating">
+                <a class="like-rating__link" href="#">
+                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <span class="like-rating__value title title--smaller">254</span>
+                </a>
               </div>
             </div>
           </li>
@@ -128,11 +161,19 @@
           в очередной раз!</p>
         <div class="video__block video-preview">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/video-desktop.webp, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet.webp, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-phone.webp, img/video-phone@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 780px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x"><img
-              class="video-preview__image" src="img/video-phone.jpg" srcset="img/video-phone@2x.jpg" alt="Видео"
-              width="280" height="177">
-          </picture><a href="#" class="video-preview-play"></a>
+            <source media="(min-width: 780px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x">
+            <img class="video-preview__image" src="img/video-phone.jpg" srcset="img/video-phone@2x.jpg"
+              alt="Видео Седона" width="280" height="177">
+          </picture>
+          <a href="#" class="video-preview-play">
+            <div class="visually-hidden">Смотреть видео</div>
+          </a>
         </div>
       </section>
     </main>

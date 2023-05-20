@@ -83,11 +83,16 @@
           </li>
           <li class="advantages-list__item advantages-list__item--with-image advantages-card">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-bridge-desktop.webp, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-bridge-tablet.webp, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-phone.webp, img/photo-bridge-phone@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 780px)"
-                srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x"><img
-                class="advantages-card__image" src="img/photo-bridge-phone.jpg"
+                srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages-card__image" src="img/photo-bridge-phone.jpg"
                 srcset="img/photo-bridge-phone@2x.jpg 2x" alt="город Седона" width="320" height="260">
             </picture>
             <div class="advantages-card__wrapper advantages-card__wrapper--with-image">
@@ -128,12 +133,11 @@
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта.</h2>
         <div class="map__element">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 780px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x"><img
-              class="map__image" src="img/map-phone.jpg" srcset="img/map-phone@2x.jpg" alt="карта" width="320"
-              height="350">
-          </picture>
+          <iframe class="map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457360.43163000466!2d-111.99055794443726!3d34.79151753383951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2skz!4v1681227557676!5m2!1sru!2skz"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Адрес города Седона." width="320" height="350">
+          </iframe>
         </div>
       </section>
     </main>

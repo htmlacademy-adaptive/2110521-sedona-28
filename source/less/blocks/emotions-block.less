@@ -1,6 +1,33 @@
 .emotions-block {
   margin-bottom: 56px;
 
+  @media (min-width: @tablet) {
+    position: relative;
+
+    .review-form__title {
+      width: 400px;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 100;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 648px;
+      top: -18%;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @media (min-width: @desktop) {
+        width: 960px;
+        top: -15%;
+      }
+    }
+  }
+
   @media (min-width: @desktop) {
     width: 768px;
     margin: 0 auto 56px;

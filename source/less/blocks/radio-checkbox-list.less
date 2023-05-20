@@ -1,0 +1,21 @@
+@media (min-width: @tablet) {
+  .radio-list,
+  .checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    padding: 0 36px;
+
+    @media (min-width: @desktop) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 31px 50px;
+      justify-content: space-between;
+    }
+  }
+
+  .checkbox-list {
+    padding: 0 84px;
+  }
+}
