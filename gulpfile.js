@@ -29,7 +29,7 @@ export const styles = () => {
 // html
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin())
   .pipe(gulp.dest('build'));
 }
 
@@ -86,7 +86,7 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*{woff2,woff}',
-    'source/*/ico',
+    'source/*.ico',
   ], {
     base: 'source'
   })
