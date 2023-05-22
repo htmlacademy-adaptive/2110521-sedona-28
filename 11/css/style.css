@@ -595,6 +595,12 @@
 @media (min-width: 768px) {
   .advantages-card__wrapper--gray {
     padding: 41px 33px 63px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-card__wrapper--gray {
+    padding: 50px 33px 54px;
   }
 }
 .facilities-list {
@@ -820,6 +826,11 @@
 }
 .map {
   padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .map {
+    padding-bottom: 0;
+  }
 }
 .map__iframe {
   display: block;
@@ -1384,7 +1395,7 @@
 .input-text:hover {
   background-color: #e5e5e5;
 }
-.input-text:active {
+.input-text:focus {
   background-color: #ffffff;
   outline: 4px solid #e5e5e5;
 }
@@ -1523,10 +1534,10 @@
 .input-checkbox:hover + .custom-checkbox {
   background-color: #e5e5e5;
 }
-.input-checkbox:active + .custom-checkbox {
+.input-checkbox:focus + .custom-checkbox {
   background-color: #d5d5d5;
 }
-.input-checkbox:active + .custom-checkbox::before {
+.input-checkbox:focus + .custom-checkbox::before {
   opacity: 0.3;
 }
 .custom-checkbox::before {
@@ -1564,10 +1575,10 @@
 .input-radio:hover + .custom-radio {
   background-color: #e5e5e5;
 }
-.input-radio:active + .custom-radio {
+.input-radio:focus + .custom-radio {
   background-color: #d5d5d5;
 }
-.input-radio:active + .custom-radio::before {
+.input-radio:focus + .custom-radio::before {
   opacity: 0.3;
 }
 .custom-radio::before {
