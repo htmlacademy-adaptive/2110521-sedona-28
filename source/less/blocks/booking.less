@@ -6,12 +6,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 155px 55px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 65px;
   }
 }
 
 .booking__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .booking__description {
@@ -20,6 +30,7 @@
 
   @media (min-width: @tablet) {
     max-width: 435px;
+    margin-bottom: 44px;
   }
 }
 

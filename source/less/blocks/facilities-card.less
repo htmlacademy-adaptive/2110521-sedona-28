@@ -2,70 +2,123 @@
   background-color: #ffffff;
   position: relative;
 
-  &--home .title::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 37px;
-    left: 5%;
-    background-image: url("../img/icons/icon-house.svg");
-    background-repeat: no-repeat;
-
+  &--home {
     @media (min-width: @tablet) {
-      width: 77px;
-      height: 72px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      top: 60px;
-      background-image: url("../img/icons/icon-house-tablet.svg");
+      padding: 157px 33px 60px;
+    }
+
+    @media (min-width: @desktop) {
+      padding: 168px 50px 69px;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 37px;
+      left: 5%;
+      top: 0;
+      background-image: url("../img/icons/icon-house.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet) {
+        width: 77px;
+        height: 72px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 60px;
+        background-image: url("../img/icons/icon-house-tablet.svg");
+      }
+
+      @media (min-width: @desktop) {
+        top: 65px;
+      }
     }
   }
 
-  &--food .title::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 37px;
-    left: 5%;
-    background-image: url("../img/icons/icon-burger.svg");
-    background-repeat: no-repeat;
-
+  &--food {
     @media (min-width: @tablet) {
-      width: 80px;
-      height: 70px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      background-image: url("../img/icons/icon-burger-tablet.svg");
-      top: 60px;
+      padding: 155px 33px 61px;
+
+      .facilities-card__description {
+        width: 157px;
+      }
+    }
+
+    @media (min-width: @desktop) {
+      padding: 165px 50px 69px;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 37px;
+      left: 5%;
+      top: 0;
+      background-image: url("../img/icons/icon-burger.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet) {
+        width: 80px;
+        height: 70px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-image: url("../img/icons/icon-burger-tablet.svg");
+        top: 60px;
+      }
+
+      @media (min-width: @desktop) {
+        background-image: url("../img/icons/icon-burger-desktop.svg");
+        top: 65px;
+        width: 73px;
+      }
     }
   }
 
-  &--present .title::before {
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 38px;
-    left: 5%;
-    background-image: url("../img/icons/icon-gift.svg");
-    background-repeat: no-repeat;
-
+  &--present {
     @media (min-width: @tablet) {
-      width: 70px;
-      height: 75px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      top: 60px;
-      background-image: url("../img/icons/icon-gift-tablet.svg");
+      padding: 151px 33px 64px;
+    }
+
+    @media (min-width: @desktop) {
+      padding: 169px 50px 69px;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 38px;
+      left: 5%;
+      top: 0;
+      background-image: url("../img/icons/icon-gift.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet) {
+        width: 70px;
+        height: 75px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 60px;
+        background-image: url("../img/icons/icon-gift-tablet.svg");
+      }
+
+      @media (min-width: @desktop) {
+        background-image: url("../img/icons/icon-gift-desktop.svg");
+        width: 78px;
+        top: 65px;
+      }
     }
   }
+
 
   @media (min-width: @tablet) {
     width: 256px;
+    height: 331px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 158px;
-    padding-bottom: 60px;
   }
 
   @media (min-width: @desktop) {
@@ -81,7 +134,7 @@
   @media (min-width: @tablet) {
     max-width: 190px;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 

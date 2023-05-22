@@ -1,5 +1,5 @@
 .button {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -14,5 +14,26 @@
 
   &--form {
     padding: 16px 16px;
+
+    @media (min-width: @tablet) {
+      padding: 16px 71px;
+    }
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  &--modal {
+    padding: 18px 62px 14px;
   }
 }

@@ -1,6 +1,7 @@
 .photo-card {
-  padding: 25px 20px;
+  padding: 25px 20px 21px;
   border-top: 1px solid #e5e5e5;
+  position: relative;
 
   @media (min-width: @tablet) {
     border-top: none;
@@ -21,22 +22,53 @@
 .photo-card__title {
   align-self: flex-start;
   margin: 0;
-  margin-bottom: 15px;
+
+  @media (min-width: @desktop) {
+    color: #ffffff;
+  }
 }
 
 .photo-card__author {
   align-self: flex-start;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
+
+  @media (min-width: @desktop) {
+    color: #ffffff;
+    margin-bottom: 0;
+  }
 }
 
 .photo-card__image {
   display: block;
   width: 100%;
+
+  @media (min-width: @tablet) {
+    height: 267px;
+  }
 }
 
 @media (min-width: @tablet) {
   .photo-card__main {
     height: 400px;
+  }
+}
+
+.photo-card__liked {
+  @media (min-width: @tablet) {
+    align-self: flex-start;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .photo-card:not(:first-child) {
+    .photo-card__title {
+      margin-bottom: 5px;
+    }
+
+    .photo-card__liked {
+      align-self: center;
+    }
   }
 }

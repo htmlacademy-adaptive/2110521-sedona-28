@@ -5,16 +5,13 @@
   margin: 0;
   padding: 0;
   min-width: 320px;
-  width: 100%;
+  background-color: #7db1d1;
 
   @media (min-width: @tablet) {
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: repeat(5, 1fr);
     width: 768px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 27px 0 48px;
-    margin: 20px 0;
   }
 
   @media (min-width: @desktop) {
@@ -25,29 +22,85 @@
 .site-list a {
   color: #ffffff;
   text-decoration: none;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  flex-grow: 1;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet) {
     color: #000000;
+    flex-grow: 0;
+    padding-top: 17px;
+    padding-bottom: 12px;
+
+    &:hover {
+      background-color: transparent;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: transparent;
+      opacity: 0.3;
+    }
   }
 }
 
 .site-list__item {
   background-color: #81b3d2;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  min-height: 56px;
+  min-height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 
+  &--current a {
+    &:hover {
+      background-color: #7db1d1;
+    }
+
+    &:active {
+      background-color: #7db1d1;
+    }
+
+    @media (min-width: @tablet) {
+      color: #766357;
+
+      &:hover {
+        background-color: transparent;
+        color: #766357;
+      }
+
+      &:active {
+        background-color: transparent;
+        color: #766357;
+      }
+    }
+  }
+
+  .title {
+    @media (min-width: @tablet) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
   @media (min-width: @tablet) {
     box-shadow: none;
     background-color: transparent;
-    width: 20%;
-    min-height: 22px;
+  }
 
-    &:nth-child(4n+3) {
-      margin-left: 20%;
+  &:nth-of-type(3) {
+    @media (min-width: @tablet) {
+      grid-column: 4;
     }
   }
 
