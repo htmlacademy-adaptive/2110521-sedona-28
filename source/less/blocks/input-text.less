@@ -1,5 +1,5 @@
 .input-text {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 16px;
   background-color: #f2f2f2;
   border: none;
@@ -9,6 +9,7 @@
   font-weight: 700;
   color: #000000;
   font-size: 18px;
+  line-height: 26px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -50,11 +51,11 @@
   }
 
   &--emotions {
-    min-height: 150px;
+    height: 150px;
     resize: none;
 
-    @media (min-width: @desktop) {
-      margin-top: 8px;
+    @media (min-width: @tablet) {
+      height: 160px;
     }
   }
 }

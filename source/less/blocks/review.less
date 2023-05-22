@@ -5,18 +5,22 @@
   flex-direction: column;
 
   @media (min-width: @tablet) {
-    padding: 0 60px 50px;
+    padding: 0 60px 60px;
     border-top: none;
   }
 
   @media (min-width: @desktop) {
-    padding: 0 120px 50px;
+    padding: 0 120px 60px;
   }
 }
 
 .review__title {
   margin: 0;
   margin-top: 35px;
+
+  @media (min-width: @tablet) {
+    margin-top: 64px;
+  }
 
   @media (min-width: @desktop) {
     margin-top: 115px;
@@ -28,7 +32,11 @@
 
   @media (min-width: @tablet) {
     max-width: 436px;
-    margin: 24px auto 100px;
+    margin: 21px auto 83px;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 34px auto 43px;
   }
 }
 

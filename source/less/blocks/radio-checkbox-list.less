@@ -10,12 +10,36 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 31px 50px;
+      padding: 16px 50px;
       justify-content: space-between;
     }
   }
 
   .checkbox-list {
     padding: 0 84px;
+    column-gap: 33px;
   }
+}
+
+.checkbox-list {
+  @media (min-width: @desktop) {
+    padding-top: 33px;
+    padding-bottom: 52px;
+  }
+}
+
+.radio-list .review-form__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.checkbox-list .review-form__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.review-form__control {
+  display: flex;
 }

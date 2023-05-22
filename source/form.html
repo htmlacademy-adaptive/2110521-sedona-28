@@ -23,11 +23,12 @@
             class="visually-hidden">Открыть меню.</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link title title--smaller"
-                href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link title title--smaller" href="index.html">Главная</a>
+            </li>
             <li class="site-list__item"><a class="site-list__link title title--smaller" href="catalog.html">Фото и
                 видео</a></li>
-            <li class="site-list__item site-list__item--current"><a class="site-list__link title title--smaller" href="form.html">Форма
+            <li class="site-list__item site-list__item--current"><a class="site-list__link title title--smaller"
+                href="form.html">Форма
                 Отзыва</a></li>
             <li class="site-list__item"><a class="site-list__link title title--smaller"
                 href="https://htmlacademy.ru/study">HTML ACADEMY</a></li>
@@ -36,8 +37,8 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="main-container__banner sedona-banner"><img class="sedona-banner__logo" src="img/short-logo-sedona.svg" alt="Седона" width="230"
-          height="40"></div>
+      <div class="main-container__banner sedona-banner"><img class="sedona-banner__logo" src="img/short-logo-sedona.svg"
+          alt="Седона" width="230" height="40"></div>
       <section class="review">
         <h1 class="review__title title title--biggest">Оставьте свой отзыв</h1>
         <p class="review__description description">
@@ -86,10 +87,14 @@
           <fieldset class="review-form__block form-fieldset form-border-top">
             <legend class="review-form__title title title--bigger-tablet">ВАше Общее впечатление:</legend>
             <ul class="review-form__list review-form-list radio-list">
-              <li class="review-form__list-item radio-list__item"><label class="review-form__control"><input
-                    class="review-form__input input-radio" type="radio" name="telephone" checked="checked"> <span
-                    class="custom-radio"></span> <span class="review-form__label label title title--capitalize">Скорее
-                    положительное</span></label></li>
+              <li class="review-form__list-item radio-list__item">
+                <label class="review-form__control">
+                  <input class="review-form__input input-radio" type="radio" name="telephone" checked="checked">
+                  <span class="custom-radio"></span>
+                  <span class="review-form__label label title title--capitalize">Скорее
+                    положительное</span>
+                </label>
+              </li>
               <li class="review-form__list-item radio-list__item"><label class="review-form__control"><input
                     class="review-form__input input-radio" type="radio" name="telephone"> <span
                     class="custom-radio"></span> <span class="review-form__label label title title--capitalize">Скорее
@@ -166,7 +171,7 @@
       <p class="modal__title title">Что-то пошло не так!</p>
       <p class="modal__text modal__text--error description">Проверьте поля, выделенные красным, скорее всего вы
         забыли их заполнить</p>
-        <button class="modal__button modal__button--error button button--modal" type="button" id="errorClose">Ок</button>
+      <button class="modal__button modal__button--error button button--modal" type="button" id="errorClose">Ок</button>
     </div>
   </div>
   <!-- Модальные окна. Модальное окно принятого отзыва -->
@@ -175,10 +180,10 @@
       <p class="modal__title title">Ваш отзыв отправлен!</p>
       <p class="modal__text description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
         мы опубликуем его на сайте.</p>
-        <div class="modal__button-wrapper">
-          <button class="modal__button modal__button--submit button button--modal" type="button" id="submitClose">Закрыть
-            окно</button>
-        </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button--submit button button--modal" type="button" id="submitClose">Закрыть
+          окно</button>
+      </div>
     </div>
   </div>
   <script src="js/main.js"></script>
