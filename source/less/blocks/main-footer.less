@@ -1,12 +1,17 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding: 33px 82px;
-  gap: 30px;
+  padding: 17px 82px;
+  gap: 15px;
   align-items: center;
 
   @media (min-width: @tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px 60px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 30px 120px;
   }
 }

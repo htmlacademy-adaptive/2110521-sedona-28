@@ -4,4 +4,27 @@
   gap: 14px;
   align-items: center;
   text-decoration: none;
+
+  @media (min-width: @tablet) {
+    gap: 8px;
+  }
+}
+
+.like-rating__image {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 7px;
+
+  & path {
+    @media (min-width: @desktop) {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+.like-rating__value {
+  @media (min-width: @desktop) {
+    color: #ffffff;
+  }
 }

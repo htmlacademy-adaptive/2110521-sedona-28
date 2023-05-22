@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -59,11 +61,16 @@
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
                 <h3 class="photo-card__title title title--smaller">Неродные просторы</h3>
-                <p class="photo-card__author description description-nontransform">Автор фото: Борис</p>
+                <p class="photo-card__author description description--nontransform">Автор фото: Борис</p>
               </div>
               <div class="photo-card__liked like-rating">
                 <a class="like-rating__link" href="#">
-                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <svg class="like-rating__image" width="23" height="21"
+                    viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
                   <span class="like-rating__value title title--smaller">1350</span>
                 </a>
               </div>
@@ -87,11 +94,16 @@
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
                 <h3 class="photo-card__title title title--smaller">Местная растительность</h3>
-                <p class="photo-card__author description description-nontransform">Автор фото: Сергей</p>
+                <p class="photo-card__author description description--nontransform">Автор фото: Сергей</p>
               </div>
               <div class="photo-card__liked like-rating">
                 <a class="like-rating__link" href="#">
-                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <svg class="like-rating__image" width="23" height="21"
+                    viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
                   <span class="like-rating__value title title--smaller">143</span>
                 </a>
               </div>
@@ -115,11 +127,16 @@
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
                 <h3 class="photo-card__title title title--smaller">Дорога на север</h3>
-                <p class="photo-card__author description description-nontransform">Автор фото: Петр</p>
+                <p class="photo-card__author description description--nontransform">Автор фото: Петр</p>
               </div>
               <div class="photo-card__liked like-rating">
                 <a class="like-rating__link" href="#">
-                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <svg class="like-rating__image" width="23" height="21"
+                    viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
                   <span class="like-rating__value title title--smaller">96</span>
                 </a>
               </div>
@@ -143,11 +160,16 @@
             <div class="photo-item__wrapper">
               <div class="photos-list__text-block">
                 <h3 class="photo-card__title title title--smaller">Мост дьявола</h3>
-                <p class="photo-card__author description description-nontransform">Автор фото: Антон</p>
+                <p class="photo-card__author description description--nontransform">Автор фото: Антон</p>
               </div>
               <div class="photo-card__liked like-rating">
                 <a class="like-rating__link" href="#">
-                  <img class="like-rating__image" src="img/thumb-up.svg" alt="лайк" width="23" height="21">
+                  <svg class="like-rating__image" width="23" height="21"
+                    viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
                   <span class="like-rating__value title title--smaller">254</span>
                 </a>
               </div>
