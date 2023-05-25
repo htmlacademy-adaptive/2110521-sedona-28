@@ -52,34 +52,6 @@
   }
 }
 
-@media (min-width: @tablet) {
-  .form-border-top {
-    position: relative;
-
-    .review-form__title {
-      width: 400px;
-      background-color: #ffffff;
-      position: relative;
-      z-index: 100;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #dbdbdb;
-      height: 1px;
-      width: 648px;
-      top: -35%;
-      left: 50%;
-      transform: translate(-50%, 0);
-
-      @media (min-width: @desktop) {
-        width: 960px;
-      }
-    }
-  }
-}
-
 .review-form__submit-button {
   display: flex;
   flex-direction: column;
