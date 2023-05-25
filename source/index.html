@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header"><a href="#" class="main-header__logo"><img class="main-header__logo-image"
+    <header class="main-header"><a href="index.html" class="main-header__logo"><img class="main-header__logo-image"
           src="img/header-logo.svg" alt="Логотип Седона" width="185" height="96"></a>
       <nav class="main-nav main-nav--nojs main-nav--closed"><button
           class="main-nav__toggle toggle-button toggle-button--burger" type="button"><span
@@ -58,7 +58,7 @@
               <h3 class="advantages-card__title title title--with-image">НАСТОЯЩИЙ ГОРОДОК</h3>
               <p class="advantages-card__number description description--with-image">— №1 —</p>
               <p class="advantages-card__description description description--with-image">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ
-                ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                ТУРИСТОВ,<br class="br-desktop-only"> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -84,7 +84,7 @@
               </li>
               <li class="facilities-list__item facilities-card facilities-card--present">
                 <h4 class="facilities-card__title title title--left">СУВЕНИРЫ</h4>
-                <p class="facilities-card__description description description--left">Не только китайского, но и
+                <p class="facilities-card__description description description--left">Не только китайского,<br class="br-desktop-only"> но и
                   местного производства!</p>
               </li>
             </ul>
@@ -93,7 +93,7 @@
             <div class="advantages-card__wrapper advantages-card__wrapper--with-image">
               <h3 class="advantages-card__title title title--with-image">ТАМ ЕСТЬ Мост дьявола</h3>
               <p class="advantages-card__number description description--with-image">— №2 —</p>
-              <p class="advantages-card__description description description--with-image">Да, по нему можно пройти! Если
+              <p class="advantages-card__description description description--with-image">Да, по нему можно пройти!<br class="br-desktop-only"> Если
                 вы осмелитесь, конечно</p>
             </div>
             <div class="advantages-card__image-wrapper">
@@ -123,7 +123,7 @@
             <div class="advantages-card__wrapper advantages-card__wrapper--gray">
               <h3 class="advantages-card__title title">КРАСИВАЯ ДОРОГА</h3>
               <p class="advantages-card__number description">— №4 —</p>
-              <p class="advantages-card__description description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
+              <p class="advantages-card__description description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br class="br-text">
                 НЕ СКУЧНО!</p>
             </div>
           </li>
@@ -131,14 +131,14 @@
             <div class="advantages-card__wrapper advantages-card__wrapper--gray">
               <h3 class="advantages-card__title title">МАЛО ТУРИСТОВ</h3>
               <p class="advantages-card__number description">— №5 —</p>
-              <p class="advantages-card__description description">Большинство едет в гранд каньон толпится там</p>
+              <p class="advantages-card__description description">Большинство едет в гранд каньон и<br class="br-desktop-only"> толпится там</p>
             </div>
           </li>
         </ul>
       </section>
       <section class="booking">
         <h2 class="booking__title title title--bigger">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="booking__description description">Укажите предполагаемые даты поездки, и мы покажем вам
+        <p class="booking__description description">Укажите предполагаемые даты поездки,<br class="br-text"> и мы покажем вам
           лучшие предложения гостиниц в седоне</p><a class="booking__button button" href="#">Найти Гостиницу</a>
       </section>
       <section class="map">
