@@ -44,7 +44,7 @@
         <p class="review__description description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
-        <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="get" id="review">
           <div class="review-form__wrapper">
             <fieldset class="review-form__block form-fieldset">
               <legend class="review-form__title title title--bigger-tablet">Представьтесь:</legend>
@@ -71,16 +71,21 @@
             <fieldset class="review-form__block form-fieldset">
               <legend class="review-form__title title title--bigger-tablet">Контактная информация:</legend>
               <ul class="review-form__list review-form-list">
-                <li class="review-form__list-item review-form__list-item--flex"><label
-                    class="review-form__label label description description--left label-phone"
-                    for="telephone">Контактный телефон*:</label> <input
-                    class="review-form__input input-text input-text--phone" type="tel" id="telephone" name="telephone"
-                    placeholder="Введите телефон" required> <span class="input-phone-icon"></span></li>
-                <li class="review-form__list-item review-form__list-item--flex"><label
-                    class="review-form__label label description description--left lable-email" for="email">Электронная
-                    почта*:</label> <input class="review-form__input input-text input-text--email" type="email"
-                    id="email" name="email" placeholder="Введите e-mail" required> <span
-                    class="input-email-icon"></span></li>
+                <li class="review-form__list-item review-form__list-item--flex">
+                  <label class="review-form__label label description description--left label-phone"
+                    for="telephone">Контактный телефон*:</label>
+                  <input class="review-form__input input-text input-text--phone" type="tel" id="telephone"
+                    name="telephone" placeholder="Введите телефон">
+                  <span class="input-phone-icon"></span>
+                </li>
+                <li class="review-form__list-item review-form__list-item--flex">
+                  <label class="review-form__label label description description--left lable-email"
+                    for="email">Электронная
+                    почта*:</label>
+                  <input class="review-form__input input-text input-text--email" type="email" id="email" name="email"
+                    placeholder="Введите e-mail">
+                  <span class="input-email-icon"></span>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -167,7 +172,7 @@
   </div>
   <!-- Модальные окна. Модальное окно ошибки -->
   <div class="modal-container modal-container--error modal-container--hidden">
-    <div class="modal modal--error modal-error--hidden">
+    <div class="modal modal--error modal--hidden">
       <p class="modal__title title">Что-то пошло не так!</p>
       <p class="modal__text modal__text--error description">Проверьте поля, выделенные красным, скорее всего вы
         забыли их заполнить</p>
@@ -187,6 +192,7 @@
     </div>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
 </body>
 
 </html>
