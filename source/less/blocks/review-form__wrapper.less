@@ -1,0 +1,23 @@
+.review-form__wrapper {
+  position: relative;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 58px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      background-color: #dbdbdb;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @media (min-width: @desktop) {
+    gap: 100px;
+  }
+}
