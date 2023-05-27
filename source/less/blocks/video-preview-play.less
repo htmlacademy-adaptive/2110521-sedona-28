@@ -1,0 +1,23 @@
+.video-preview-play {
+  position: absolute;
+  background-image: url("../img/play-button.svg");
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+}
